@@ -35,14 +35,18 @@
       <br/><br/><br/><br/>
       <h id="type"></h>
       <br/><br/><br/>
-      <p id="description"><p>
+      <p id="description" onclick="refer()"><p>
     </center>
   <script>
     
 var i = 0;
-var txt = 'I am a student who codes Python, Javascript, Java, Bash, Batchfile and HTML. You can reach me out on my Discord account, other wise check out my <a href="https://github.com/Cryptos1337">GitHub</a>.';
+var txt = 'I am a student who codes Python, Javascript, Java, Bash, Batchfile and HTML. You can reach me out on my Discord account, other wise check out my GitHub.';
 var speed = 50;
 
+function refer(){
+  window.open("https://github.com/Cryptos1337")
+}
+    
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("description").innerHTML += txt.charAt(i);
