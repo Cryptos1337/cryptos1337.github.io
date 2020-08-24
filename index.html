@@ -23,27 +23,35 @@
       font-family: 'Alata', sans-serif;
       font-size: 60;
     }
+    
+    p {
+      color: white;
+      font-family: 'Alata', sans-serif;
+      font-size: 40;
+    }
   </style>
   <body>
     <center>
       <br/><br/><br/><br/>
       <h id="type"></h>
+      <br/><br/><br/>
+      <p id="description"><p>
     </center>
   <script>
-/*
+    
 var i = 0;
-var txt = 'Cryptos';
-var speed = 100;
+var txt = 'I am a student who codes Python, Javascript, Java, Bash, Batchfile and HTML. You can reach me out on my Discord account, other wise check out my GitHub.';
+var speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("type").innerHTML += txt.charAt(i);
+    document.getElementById("description").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
 typeWriter()
-*/
+
 var app = document.getElementById('type');
 
 var typewriter = new Typewriter(app, {
