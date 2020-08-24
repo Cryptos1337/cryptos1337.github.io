@@ -29,6 +29,7 @@
       <h id="type"></h>
     </center>
   <script>
+/*
 var i = 0;
 var txt = 'Cryptos';
 var speed = 100;
@@ -41,6 +42,14 @@ function typeWriter() {
   }
 }
 typeWriter()
+*/
+var app = document.getElementById('type');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString("Cryptos").pauseFor(2000).start()
   </script>
   </body>
 </html>
