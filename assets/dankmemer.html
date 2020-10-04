@@ -1,0 +1,21 @@
+<html><head></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">import requests as send
+from time import sleep
+
+channel_id = input("Enter Channel ID\n[&gt;]: ")
+
+tokens = open("tokens.txt", "r").read().splitlines()
+
+text = "pls beg"
+
+while True:
+  for token in tokens:
+    send.post(f"https://discordapp.com/api/v8/channels/{channel_id}/messages", 
+    headers={
+      "authorization": token,
+      'Content-Type': 'application/json'
+    }, json={
+      "content": text,
+      "tts": False
+    })
+    print(" Done ")
+  sleep(45)</pre></body></html>
